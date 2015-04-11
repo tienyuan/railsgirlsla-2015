@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :comments
+
+  root :to => redirect('/adventures')
   get 'pages/info'
 
   resources :adventures
